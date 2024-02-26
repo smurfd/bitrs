@@ -18,8 +18,8 @@ def test_bitrs() -> None:
   for _ in range(10):
     b.start()
   print(b.stop())
-  print("time {:.4f}".format(time.perf_counter() - t))
+  print('time {:.4f}'.format(time.perf_counter() - t))
 
 
 if __name__ == '__main__':
-  print("OK")
+  print('OK')

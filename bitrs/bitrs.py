@@ -23,7 +23,8 @@ class Bitrs(multiprocessing.Process):
     self.prcs = multiprocessing.Pool(cpus)
     self.args = args
 
-  def start(self) -> None: self.ret = self.prcs.apply_async(self.func, self.args)
+  def start(self) -> None:
+    self.ret = self.prcs.apply_async(self.func, self.args)
 
   def stop(self) -> Any:
     self.prcs.close()
