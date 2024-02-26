@@ -36,4 +36,5 @@ unfixable = []
 quote-style = "single"
 indent-style = "space"
 skip-magic-trailing-comma = false
-line-ending = "auto"
+line-ending = "lf"
+preview = true
